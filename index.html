@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Linking font awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="bg2.jpg">
+    <center>
+        <h1 class="page-title">Meet My Team Member</h1>
+        <hr class="divider">
+    </center>
+
+    <div class="team-row">
+        <div class="member">
+            <img src="img1.jpg" alt="Gaurav Pawar" class="profile-img">
+            <div class="container">
+                <div class="member-details">
+                    <h2>Gaurav Pawar</h2>
+                    <h3>CEO & Founder</h3>
+                </div>
+                <p class="more-info">Gaurav Pawar is the visionary leader behind InnovateTech, bringing over 5 years of experience in the technology industry. With a passion for innovation and a commitment to excellence, he founded InnovateTech in 2010 with the goal of making cutting-edge technology accessible to all. Under his leadership, InnovateTech has grown from a startup to an industry leader, known for its groundbreaking products and exceptional customer service. His forward-thinking approach and dedication to quality and integrity continue to drive the company’s success and inspire the team. When he isn't steering the helm at InnovateTech, he enjoys hiking, reading, and traveling, reflecting his belief in a balanced and fulfilling life.</p>
+                <button class="button" onclick="toggleParagraph(this)">View</button>
+                <div class="social-icons">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="member">
+            <img src="img13.jpg" alt="Ritesh Chaudhari" class="profile-img">
+            <div class="container">
+                <div class="member-details">
+                    <h2>Ritesh Chaudhari</h2>
+                    <h3>Full Stack Developer</h3>
+                </div>
+                <p class="more-info">Ritesh Chaudhari is a talented Full Stack Developer at InnovateTech, bringing over 2 years of experience in the technology industry. His expertise in both front-end and back-end development has been instrumental in the success of many projects. Ritesh is known for his problem-solving skills and his ability to deliver high-quality code. His forward-thinking approach and dedication to quality and integrity continue to drive the company’s success and inspire the team. When he isn't coding, he enjoys hiking, reading, and traveling, reflecting his belief in a balanced and fulfilling life.</p>
+                <button class="button" onclick="toggleParagraph(this)">View</button>
+                <div class="social-icons">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="member">
+            <img src="img11.jpg" alt="Ganesh Chaudhari" class="profile-img">
+            <div class="container">
+                <div class="member-details">
+                    <h2>Ganesh Chaudhari</h2>
+                    <h3>Java Developer</h3>
+                </div>
+                <p class="more-info">Ganesh Chaudhari is a skilled Java Developer at InnovateTech, bringing over 2 years of experience in the technology industry. His expertise in Java development has been crucial to the company's success. Ganesh is known for his attention to detail and his commitment to delivering robust and scalable solutions. His forward-thinking approach and dedication to quality and integrity continue to drive the company’s success and inspire the team. When he isn't coding, he enjoys hiking, reading, and traveling, reflecting his belief in a balanced and fulfilling life.</p>
+                <button class="button" onclick="toggleParagraph(this)">View</button>
+                <div class="social-icons">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="member">
+            <img src="img12.jpg" alt="Sumit Patil" class="profile-img">
+            <div class="container">
+                <div class="member-details">
+                    <h2>Sumit Patil</h2>
+                    <h3>Python Developer</h3>
+                </div>
+                <p class="more-info">Sumit Patil is a dedicated Python Developer at InnovateTech, bringing over 2 years of experience in the technology industry. His expertise in Java development has been pivotal to the company's success. Sumit is known for his passion for coding and his commitment to delivering high-quality software. His forward-thinking approach and dedication to quality and integrity continue to drive the company’s success and inspire the team. When he isn't coding, he enjoys hiking, reading, and traveling, reflecting his belief in a balanced and fulfilling life.</p>
+                <button class="button" onclick="toggleParagraph(this)">View</button>
+                <div class="social-icons">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleParagraph(button) {
+            var moreInfo = button.previousElementSibling;
+            if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
+                moreInfo.style.display = "block";
+                button.textContent = "Hide";
+            } else {
+                moreInfo.style.display = "none";
+                button.textContent = "View";
+            }
+        }
+    </script>
+</body>
+</html>

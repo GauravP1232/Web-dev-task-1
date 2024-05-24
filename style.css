@@ -1,0 +1,173 @@
+/* General styles */
+html { 
+    box-sizing: border-box; 
+}
+*, *:before, *:after { 
+    box-sizing: inherit; 
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+/* Page title styling */
+.page-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+    color: orange;
+}
+
+/* Divider styling */
+.divider {
+    border: 1px solid #ddd;
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Flex container for rows */
+.team-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Column width change depends on screen size */
+@media screen and (max-width: 670px) { 
+    .member { 
+        width: 100%; 
+    } 
+}
+
+/* Card styling */
+.member {
+    background-image: url('bg.jpg'); /* Adding background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the background image */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    transition: 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    margin: 10px;
+}
+
+.container {
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.8); /* Adding a semi-transparent white background to ensure text readability */
+    border-radius: 10px; /* Ensuring the container has rounded corners */
+}
+
+/* Profile image styling */
+.profile-img {
+    width: 150px; /* Set a specific width */
+    height: 150px; /* Set a specific height */
+    object-fit: cover;
+    border-radius: 50%; /* Make the image circular */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Center the image */
+}
+
+/* Button styling */
+.button {
+    border: none;
+    padding: 10px;
+    color: white;
+    background-color: #4CAF50;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 0 0 10px 10px; /* Rounded corners on bottom */
+}
+
+/* Hover effect on button */
+.button:hover {
+    background-color: green;
+}
+
+/* Icon styling */
+.fa {
+    margin: 10px;
+    font-size: 24px;
+    color: #333;
+    transition: transform 0.8s; /* Added transition for icon rotation */
+}
+
+.fa:hover {
+    transform: rotateY(180deg);
+}
+
+/* Social media icons styling */
+.social-icons {
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #4CAF50;
+}
+
+/* More info paragraph styling */
+.more-info {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Member details */
+.member-details {
+    text-align: center;
+}
+
+.member-details h2 {
+    color: red;
+    margin-bottom: 5px;
+}
+
+.member-details h3 {
+    color: burlywood;
+    margin-bottom: 10px;
+}
+
+/* Position styling */
+.position {
+    color: burlywood;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 1px solid #ddd;
+    width: 80%;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+p {
+    margin: 10px 0;
+}
